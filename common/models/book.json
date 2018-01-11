@@ -1,0 +1,31 @@
+{
+  "name": "book",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "isbn": {
+      "type": "string",
+      "required": true
+    },
+    "thumbnailURL": {
+      "type": "string",
+      "required": true
+    },
+    "isBorrowed": {
+      "type": "boolean",
+      "required": true,
+      "default": false
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
